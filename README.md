@@ -4,7 +4,9 @@ This is a biography website of Yanru (Grace) Zhu that includes a description abo
 Welcome!
 
 ## How I go beyond
-I added more pages to show more details about myself as well as more content (more images and videos).
+1. I added 2 more pages to show more details about myself.
+2. I added 1 video, 1 embeded youtube video, and 1 audio to diversify the types of media, though I need to make the audio being able to automatically play consistently in the whole website in the future.
+3. Lots of images that can be turned into a gallery in the future.
 
 
 ## How to run
