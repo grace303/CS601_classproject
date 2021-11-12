@@ -8,6 +8,12 @@
 
 body {
   background-color: var(--secondary-color);
+  margin: 0px auto;
+  padding: 2rem;
+}
+
+body div {
+  text-align: center;
 }
 
 nav {
@@ -37,4 +43,27 @@ nav a {
 nav a:hover {
   color: var(--third-color);
   transition: 0.6s;
+}
+
+/* homepage */
+.basicIntro {
+  float: left;
+  margin-left: 20rem;
+}
+
+.basicIntro h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.basicIntro ol {
+  border-left: 5px solid black;
+  list-style: none;
+  text-align: left;
+}
+
+.profile {
+  width: 30%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
