@@ -95,4 +95,8 @@ footer i {
 }
 
 /* about */
-.about-me-text
+.about-me-text {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
