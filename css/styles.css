@@ -95,8 +95,40 @@ footer i {
 }
 
 /* about */
-.about-me-text {
+.about-me-text,
+.about-me-imgs,
+.about-me-personality {
   width: 70%;
-  margin: auto;
+  margin: 3rem auto 0 auto;
   text-align: left;
+}
+
+.about-me-text {
+  margin-top: 6rem;
+}
+
+.about-me-personality {
+  margin-bottom: 6rem;
+}
+
+.about-me-imgs figure {
+  display: inline-block;
+  width: 45%;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-imgs :nth-child(1) img {
+  width: 50%;
+}
+
+.about-me-imgs :nth-child(2) img {
+  width: 80%;
+}
+.about-me-imgs figcaption {
+  margin-top: 1rem;
+}
+
+.about-me-personality video {
+  width: 50%;
 }
