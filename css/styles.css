@@ -4,7 +4,7 @@
   --primary-color: #2f6168;
   --secondary-color: #fad07a;
   --third-color: #ffffff;
-  --fourth-color: #000000;
+  --fourth-color: #3b3b3b;
 }
 
 *,
@@ -13,6 +13,10 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  color: var(--fourth-color);
 }
 
 body {
@@ -51,6 +55,7 @@ h3 {
 
 p,
 li,
+th,
 td {
   font-size: 1.2rem;
 }
@@ -58,6 +63,7 @@ td {
 figcaption {
   font-size: 1rem;
   font-style: italic;
+  color: #858585;
 }
 
 .content-wrapper {
@@ -229,6 +235,8 @@ figcaption {
 .work-title {
   display: inline-block;
   margin-bottom: 1rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .sidebar {
@@ -241,12 +249,13 @@ figcaption {
   overflow-x: hidden;
   padding: 5rem 1rem;
   background-color: var(--primary-color);
-  color: var(--third-color);
   text-align: left;
 }
 
-.sidebar td {
+.sidebar td,
+.sidebar th {
   padding-top: 1rem;
+  color: var(--third-color);
 }
 
 .sidebar div {
@@ -308,14 +317,6 @@ figcaption {
   padding-left: 1rem;
 }
 
-/* Responsive layout - makes a one column-layout instead of two columns */
-@media (max-width: 800px) {
-  .flex-column {
-    flex: 90%;
-    max-width: 90%;
-  }
-}
-
 .painting {
   margin-bottom: 3rem;
 }
@@ -354,4 +355,12 @@ figcaption {
 }
 .contact-body-row:nth-child(1) {
   text-align: left;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 800px) {
+  .flex-column {
+    flex: 90%;
+    max-width: 90%;
+  }
 }
