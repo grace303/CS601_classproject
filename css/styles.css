@@ -228,15 +228,15 @@ figcaption {
   text-align: center;
 }
 
-.graduation-photo {
-  width: 80% !important;
-}
-
 .work-title {
   display: inline-block;
   margin-bottom: 1rem;
   font-style: italic;
   font-weight: bold;
+}
+
+.graduation-photo img {
+  width: 80% !important;
 }
 
 .sidebar {
@@ -301,7 +301,7 @@ figcaption {
 }
 
 .flex-column figure {
-  margin: 0.5rem 0 2rem !important;
+  margin: 0.5rem 0 2rem;
   vertical-align: middle;
 }
 
