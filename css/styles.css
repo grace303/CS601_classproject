@@ -25,7 +25,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+th {
   font-family: "Playfair Display SC", serif;
 }
 
@@ -34,6 +35,29 @@ li,
 td,
 figcaption {
   font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p,
+li,
+td {
+  font-size: 1.2rem;
+}
+
+figcaption {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .content-wrapper {
@@ -209,7 +233,7 @@ figcaption {
 
 .sidebar {
   height: 100%;
-  width: 10%;
+  width: 15%;
   position: fixed;
   z-index: 1;
   top: 0;
