@@ -7,6 +7,14 @@
   --fourth-color: #000000;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background-color: var(--secondary-color);
   margin: 0px;
@@ -263,4 +271,40 @@ figcaption {
 
 .painting {
   margin-bottom: 3rem;
+}
+
+/* contact */
+.contact-wrapper {
+  background-color: var(--primary-color);
+  width: 60%;
+  margin: 3rem auto;
+  padding: 3rem;
+  border-radius: 15px;
+  min-height: 50vh;
+}
+
+.contact-item {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #3e838c;
+  color: #3e838c;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact-item::placeholder {
+  color: #3e838c;
+}
+
+.contact-item:focus {
+  border-bottom-color: var(--third-color);
+}
+
+.contact-body-row {
+  width: 100%;
+}
+.contact-body-row:nth-child(1) {
+  text-align: left;
 }
