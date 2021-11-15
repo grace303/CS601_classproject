@@ -10,6 +10,8 @@
 *,
 *:before,
 *:after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -68,7 +70,7 @@ figcaption {
 
 .content-wrapper {
   text-align: center;
-  padding-bottom: 3rem; /* Footer height */
+  margin-bottom: 3rem;
 }
 
 .content-wrapper:after {
@@ -112,6 +114,7 @@ footer i:hover {
 .nav-bar {
   background-color: var(--primary-color);
   opacity: 80%;
+  display: none;
 }
 
 .fas {
@@ -142,25 +145,54 @@ figcaption {
   margin-top: 1rem;
 }
 
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 60%;
+}
+
+.audio-wrapper {
+  text-align: left;
+  position: absolute;
+  bottom: 3rem;
+}
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 300px;
+  height: 25px;
+}
+
+/* Create two equal columns that sits next to each other */
+.flex-column {
+  flex: 50%;
+  max-width: 50%;
+}
+
 /* home */
+.home-main {
+  margin: 3rem auto;
+}
 .basic-intro {
   float: left;
-  margin-left: 20rem;
 }
 
 .basic-intro h1 {
+  text-align: left;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
   font-size: 5rem;
 }
 
 .basic-intro ol {
   border-left: 5px solid var(--fourth-color);
+  padding-left: 2rem;
   list-style: none;
   text-align: left;
 }
 
-.profile {
-  width: 30%;
+.profile img {
+  width: 100%;
   border-radius: 50%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
@@ -287,19 +319,6 @@ figcaption {
   padding: 2rem;
 }
 
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 50%;
-}
-
-/* Create two equal columns that sits next to each other */
-.flex-column {
-  flex: 50%;
-  max-width: 50%;
-}
-
 .flex-column figure {
   margin: 0.5rem 0 2rem;
   vertical-align: middle;
@@ -357,10 +376,25 @@ figcaption {
   text-align: left;
 }
 
-/* Responsive layout for mobile */
-@media (max-width: 800px) {
+/* Responsive layout for tablet */
+@media (max-width: 720px) {
+  /* nav bar */
+  nav {
+    width: 30vw;
+    float: left;
+  }
+  .nav-bar {
+    display: inline-block;
+  }
+  nav li {
+    display: block;
+    width: 100%;
+  }
   .flex-column {
     flex: 90%;
     max-width: 90%;
+  }
+  .profile {
+    margin-top: 2rem;
   }
 }
