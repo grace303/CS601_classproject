@@ -67,6 +67,15 @@ p {
   margin-bottom: 1rem;
 }
 
+figure img {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+figure:hover img {
+  opacity: 0.8;
+}
+
 figcaption {
   font-size: 1rem;
   font-style: italic;
@@ -183,9 +192,27 @@ audio {
 
 .basic-intro h1 {
   text-align: left;
-  margin-bottom: 1.5rem;
   text-transform: uppercase;
   font-size: 5rem;
+}
+
+#moving-i {
+  display: inline-block;
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 .basic-intro ol {
@@ -199,6 +226,17 @@ audio {
   width: 100%;
   border-radius: 50%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* about */
