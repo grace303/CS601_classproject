@@ -1,5 +1,5 @@
 # CS601_Assignment1
-## Week 1
+## **Week 1**
 ## Intro
 This is a biography website of Yanru (Grace) Zhu that includes a description about me, my work, and my life. 
 Welcome!
@@ -10,11 +10,10 @@ Welcome!
 3. Lots of images that can be turned into a gallery in the future.
 4. Two tables are used.
 
-
 ## How to run
 Open the CS601_HW1_Zhu folder, click on "index.html" to open it on in your browser, then you can click on the nav bar items to browse around the website.
 
-## Week 2
+## **Week 2**
 ## Intro
 This week I mainly work on adding a css stylesheet to style the whole website. 
 
