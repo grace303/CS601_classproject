@@ -528,3 +528,114 @@ audio {
     display: none;
   }
 }
+
+/* welcome */
+
+.welcome-wrapper {
+  padding-top: 10rem;
+  background-color: var(--primary-color);
+  height: 100vh;
+  text-align: center;
+}
+
+.welcome-counter {
+  animation: counter 5s linear;
+  text-align: center;
+}
+
+.welcome-counter::before {
+  color: var(--third-color);
+  content: counter(count);
+  font-size: 8rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 1, 0.5);
+}
+
+@keyframes counter {
+  0% {
+    counter-increment: count 5;
+  }
+  25% {
+    counter-increment: count 4;
+  }
+  50% {
+    counter-increment: count 3;
+  }
+  75% {
+    counter-increment: count 2;
+  }
+  100% {
+    counter-increment: count 1;
+  }
+}
+
+.welcome-headline,
+.welcome-text {
+  color: var(--third-color);
+}
+
+.welcome-headline {
+  animation-name: jump-right;
+}
+
+.welcome-text {
+  animation-name: jump-left;
+}
+
+.welcome-btn {
+  animation-name: jump-rotate;
+}
+
+.welcome-headline,
+.welcome-text,
+.welcome-btn {
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes jump-right {
+  0% {
+    opacity: 0.2;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes jump-left {
+  0% {
+    opacity: 0.2;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes jump-rotate {
+  0% {
+    opacity: 0;
+    transform: perspective(800px) rotateX(-80deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    transform: perspective(800px) rotateX(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0);
+  }
+}
