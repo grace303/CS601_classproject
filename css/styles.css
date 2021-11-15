@@ -250,13 +250,11 @@ audio {
 
 /* work */
 .work-main {
-  margin: auto;
+  margin: 3rem 5rem;
   text-align: center;
 }
 .work-experience,
 .education {
-  width: 30%;
-  margin: 3rem;
   text-align: left;
   display: inline-block;
 }
@@ -268,7 +266,7 @@ audio {
 
 .work-experience td,
 .education td {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .arrow {
@@ -288,7 +286,7 @@ audio {
 
 .sidebar {
   height: 100%;
-  width: 15%;
+  width: 20%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -334,19 +332,19 @@ audio {
   padding: 2rem;
 }
 
-.flex-column figure {
+.gallery-column figure {
   margin: 0.5rem 0 2rem;
   vertical-align: middle;
 }
 
-.flex-column img,
-.flex-column article,
-.flex-column video {
+.gallery-column img,
+.gallery-column article,
+.gallery-column video {
   width: 95%;
   padding: 5px;
 }
 
-.flex-column article {
+.fgallery-column article {
   text-align: left;
   padding-left: 1rem;
 }
@@ -391,7 +389,7 @@ audio {
   text-align: left;
 }
 
-/* Responsive layout for tablet */
+/* Responsive layout for mobile */
 @media (max-width: 720px) {
   /* nav bar */
   nav {
@@ -404,18 +402,55 @@ audio {
     display: block;
     width: 100%;
   }
+  /* flex */
   .flex-column {
     flex: 90%;
     max-width: 90%;
   }
+
+  /* home */
   .profile {
     margin-top: 2rem;
   }
+
+  /* about */
   .about-me-text {
     margin-top: 2rem;
   }
   .about-me-imgs figure,
   .about-me-personality video {
     width: 80%;
+  }
+
+  /* work */
+  .work-experience td,
+  .education td {
+    padding: 0.5rem;
+  }
+
+  .education {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 960px) {
+  /* work sidebar */
+  .work-main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-wrapper {
+    position: relative;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .sidebar table {
+    display: none;
   }
 }
