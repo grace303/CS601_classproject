@@ -390,6 +390,9 @@ audio {
 .contact-body-row:nth-child(1) {
   text-align: left;
 }
+.contact-body-row h2 {
+  color: var(--secondary-color);
+}
 
 /* Responsive layout for mobile */
 @media (max-width: 720px) {
