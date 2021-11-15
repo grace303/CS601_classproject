@@ -327,11 +327,6 @@ audio {
 }
 
 /* life */
-.quote {
-  font-size: 1.6rem;
-  padding: 2rem;
-}
-
 .gallery-column figure {
   margin: 0.5rem 0 2rem;
   vertical-align: middle;
@@ -353,6 +348,28 @@ audio {
   border-top: 1px dashed var(--fourth-color);
   padding-top: 3rem;
   margin-bottom: 3rem;
+}
+
+/* quote animation */
+
+.quote {
+  font-size: 1.6rem;
+  padding: 2rem;
+  animation: quote-move 1s linear infinite;
+}
+
+@keyframes quote-move {
+  0%,
+  60% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  70% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  65% {
+    transform: translate(0, 0) skew(5deg);
+  }
 }
 
 /* contact */
