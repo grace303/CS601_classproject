@@ -350,6 +350,8 @@ audio {
 }
 
 .painting {
+  border-top: 1px dashed var(--fourth-color);
+  padding-top: 3rem;
   margin-bottom: 3rem;
 }
 
