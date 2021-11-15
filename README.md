@@ -32,4 +32,4 @@ This week I mainly work on adding a css stylesheet to style the whole website.
 
 
 ## How to run
-Open the CS601_HW1_Zhu folder, click on "index.html" to open it on in your browser. Click on the "LET'S GO!" button to go to the website. Then you can click on the nav bar items to browse around the website.
+Open the CS601_HW1_Zhu folder, click on "index.html" to open it on in your browser(better to use Chrome for now). Click on the "LET'S GO!" button to go to the website. Then you can click on the nav bar items to browse around the website.
