@@ -518,8 +518,19 @@ audio {
     width: 100%;
     position: static;
     padding: 0;
+    background-color: var(--secondary-color);
     padding-bottom: 3rem;
   }
+
+  .sidebar .download-btn {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+  }
+
+  .sidebar .download-btn:hover {
+    opacity: 0.9;
+  }
+
   .sidebar table {
     display: none;
   }
