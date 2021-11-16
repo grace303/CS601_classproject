@@ -13,8 +13,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -69,7 +67,6 @@ p {
 
 figure img {
   opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 figure:hover img {
@@ -227,7 +224,6 @@ audio {
   border-radius: 50%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
   animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
 }
 
 @keyframes fadeIn {
@@ -345,7 +341,7 @@ audio {
   text-align: center;
 }
 .work-footer {
-  background-color: var(--second-color);
+  background-color: var(--secondary-color);
 }
 
 .download-btn {
