@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <img :src="logoSrc" alt="Boston University Logo" />
+        <h1>{{ courseName }}</h1>
+        <!--Bind link property from Vue instance-->
+        <a :href="link">View Course Details</a>
+
+        <p v-if="offeredOnline && offeredBlended" :style="{ fontStyle: fontStyle, fontWeight: fontWeight, color:
+            fontColor }"> Offered
+            on campus, online, and blended</p>
+        <p v-else-if="offeredOnline">Offered on campus and online</p>
+        <p v-else>Offered on campus only</p>
+        <ul>
+            <li v-for="prerequisite in prerequisites">{{ prerequisite }}</li>
+        </ul>
+        <button @click="goToStudentLink" class="vue-button" :class="{ disabled: !isOpen }" :disabled="!isOpen">Register
+            Now</button>
+
+    </div>
+
+    <!--Include Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!--Create Vue instance-->
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                courseName: 'CS601: Web Application Development',
+                link: 'http://www.bu.edu/csmet/academic-programs/courses/cs601/',
+                logoSrc: 'assets/bu-logo.png',
+                offeredOnline: true,
+                offeredBlended: true,
+                prerequisites: [
+                    'CS200',
+                    'CS231',
+                    'CS232',
+                    'CS300'
+                ],
+                isOpen: true,
+                fontStyle: 'italic',
+                fontWeight: 'bold',
+                fontColor: '#dc143c'
+            },
+            methods: {
+                goToStudentLink: function () {
+                    alert('You will be redirected to Student Link.')
+                    window.location.href = 'https://www.bu.edu/studentlink'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

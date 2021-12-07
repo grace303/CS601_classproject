@@ -650,3 +650,15 @@ audio {
     transform: perspective(800px) rotateX(0);
   }
 }
+
+/* styles for vue */
+.button-vue {
+  color: #ffffff;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  background: #444444;
+}
+
+.disabled {
+  background: #d8d8d8;
+}
