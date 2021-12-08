@@ -2,14 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Yanru(Grace) Zhu Bio - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <meta name="keywords" content="Yanru Zhu, Biography">
+  <meta name="author" content="Yanru Zhu">
+  <!-- external files -->
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/02a54db174.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <nav>
+    <button class="nav-bar"><i class="fas fa-bars"></i></button>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="life.html">Life</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
   <script type="text/x-template" id="modal-component">
         <transition name="modal">
           <div class="modal-div" v-on:click="$emit('close')">
@@ -39,6 +55,15 @@
       </modal>
     </div>
   </div>
+
+  <footer>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/grace-zhu-56706933/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/grace303303/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      </li>
+    </ul>
+  </footer>
 
   <!--Include Vue-->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>

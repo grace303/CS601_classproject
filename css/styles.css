@@ -654,6 +654,8 @@ audio {
 /* styles for vue */
 #app {
   margin: 0 100px;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
 }
 .modal-div {
   position: fixed;
