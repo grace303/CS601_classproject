@@ -731,3 +731,18 @@ audio {
 .modal-div a {
   text-decoration: none;
 }
+
+@media (max-width: 720px) {
+  #app {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .portfolio-image-div {
+    width: 80%;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+}
