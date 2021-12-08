@@ -703,8 +703,19 @@ audio {
 
 .modal-close {
   cursor: pointer;
-  position: absolute;
+  position: relative;
+  top: 5%;
+  left: 5%;
   padding: 10px;
   transform: translate(0%, -50%);
   float: right;
+}
+
+.modal-div h3 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.modal-div a {
+  text-decoration: none;
 }

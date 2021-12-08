@@ -15,8 +15,11 @@
           <div class="modal-div" v-on:click="$emit('close')">
             <div class="modal-wrapper">
               <div class="modal-content">
-                <slot name="portfolio-image">placeholder</slot>
                 <span class="modal-close" v-on:click="$emit('close')">&times;</span>   
+                <slot name="portfolio-url">
+                  <slot name="portfolio-image"></slot>
+                  <slot name="portfolio-title"></slot>
+                </slot>
               </div>
             </div>
           </div>
@@ -27,7 +30,10 @@
     <div v-for="i in 4" class="portfolio-image-div">
       <img @click="showModalFunc(i)" :src="getImgUrl(i)" alt="portfolio image">
       <modal v-if="showModal[i]" v-on:close="closeModalFunc(i)">
-        <img slot="portfolio-image" :src="getImgUrl(i)" width="50px">
+        <a slot="portfolio-url" :href="portfolioURL[i-1]" target="_blank">
+          <img slot="portfolio-image" :src="getImgUrl(i)" width="50px">
+          <h3 slot="portfolio-title">{{ portfolioTitle[i-1] }}</h3>
+        </a>
       </modal>
     </div>
   </div>
