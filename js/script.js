@@ -1,11 +1,13 @@
 /*jshint esversion: 6 */
 
-function showNav() {
-    let navItems = document.getElementById("nav-items");
-    if (navItems.style.display === "block") {
-        navItems.style.display = "none";
-    } else {
-        navItems.style.display = "block";
-    }
+// Nav bar
+document.addEventListener("DOMContentLoaded", function (event) {
+    // Nav bar
+    const hamburger = document.querySelector(".nav-bar");
+    const navsub = document.querySelector(".nav-items");
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle("nav-bar-rotate");
+        navsub.classList.toggle("nav-show");
+    });
 
-}
+});

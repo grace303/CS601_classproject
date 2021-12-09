@@ -93,7 +93,7 @@ nav {
   width: 100vw;
 }
 
-nav ul,
+.nav-items,
 footer ul {
   list-style: none;
   text-align: center;
@@ -467,15 +467,35 @@ audio {
 
   /* nav bar */
   nav {
-    width: 30vw;
-  }
-  .nav-bar {
-    display: inline-block;
+    width: 20vw;
+    padding-left: 1rem;
+    text-align: left;
   }
   nav li {
     display: block;
     width: 100%;
   }
+  nav a {
+    padding-left: 0px;
+  }
+  .nav-bar {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .nav-bar:hover {
+    opacity: 1;
+  }
+  .nav-bar-rotate {
+    animation: rotate 1s;
+  }
+  .nav-items {
+    display: none;
+  }
+  .nav-show {
+    display: inline-block;
+    text-align: left;
+  }
+
   /* flex */
   .flex-column {
     flex: 90%;
