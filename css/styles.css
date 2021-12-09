@@ -445,6 +445,11 @@ audio {
   color: var(--secondary-color);
 }
 
+#contact-alert p {
+  margin-top: 1rem;
+  color: var(--secondary-color);
+}
+
 /* Responsive layout for mobile */
 @media (max-width: 720px) {
   /* font size */

@@ -38,18 +38,22 @@
                     </div>
                 </div>
                 <div class="flex-column">
-                    <div>
-                        <input class="contact-item" placeholder="NAME">
-                    </div>
-                    <div>
-                        <input class="contact-item" placeholder="EMAIL">
-                    </div>
-                    <div>
-                        <input class="contact-item" placeholder="MESSAGE">
-                    </div>
-                    <div>
-                        <a href="#" class="download-btn">SEND</a>
-                    </div>
+                    <form id="contact-form">
+                        <div>
+                            <input class="contact-item" placeholder="NAME">
+                        </div>
+                        <div>
+                            <input class="contact-item" placeholder="EMAIL">
+                        </div>
+                        <div>
+                            <input class="contact-item" placeholder="MESSAGE">
+                        </div>
+                        <div id="contact-alert">
+                        </div>
+                        <div>
+                            <a href="#" class="download-btn" onclick="submitContact()">SEND</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
