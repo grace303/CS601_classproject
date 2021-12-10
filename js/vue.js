@@ -7,7 +7,7 @@ Vue.component('modal', {
 new Vue({
     el: '#app',
     data: {
-        showModal: [false, false, false, false, false],
+        showModal: [false, false, false, false],
         portfolioURL: ["https://academ.us/", "https://www.realtychecklist.com/",
             "https://grace303303.github.io/budget/budget/index.html", "https://grace303303.github.io/editorialcreation/"],
         portfolioTitle: ["Academus.com", "realtychecklist.com",
