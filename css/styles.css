@@ -706,7 +706,7 @@ audio {
   min-height: 70%;
   background-color: #fff;
   border-radius: 2px;
-  box-shadow: #f0f0f0;
+  box-shadow: 10px 10px 5px rgba(223, 223, 223, 0.2);
   transition: all 0.2s ease;
 }
 
@@ -747,6 +747,11 @@ audio {
   padding: 10px;
   transform: translate(0%, -50%);
   float: right;
+  font-size: 25px;
+}
+
+.modal-close:hover {
+  opacity: 0.6;
 }
 
 .modal-div h3,
