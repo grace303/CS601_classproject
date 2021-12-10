@@ -1,5 +1,14 @@
 /*jshint esversion: 6 */
 
+//Welcome page
+function displayCounter() {
+    const indexCounter = document.getElementById("index-counter");
+    setTimeout(function () { indexCounter.innerHTML = '3'; }, 1000);
+    setTimeout(function () { indexCounter.innerHTML = '2'; }, 2000);
+    setTimeout(function () { indexCounter.innerHTML = '1'; }, 3000);
+    setTimeout(function () { indexCounter.innerHTML = '0'; }, 4000);
+}
+
 // Nav bar
 function toggleNavItem() {
     const hamburger = document.querySelector(".nav-bar");

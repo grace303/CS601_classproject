@@ -574,12 +574,7 @@ audio {
   margin: 1rem;
 }
 
-.welcome-counter {
-  animation: counter 5s linear;
-  text-align: center;
-}
-
-.welcome-counter::before {
+#index-counter {
   color: var(--third-color);
   content: counter(count);
   font-size: 8rem;

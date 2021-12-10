@@ -19,7 +19,7 @@
 
 <body>
     <div class="welcome-wrapper">
-        <div class="welcome-counter"></div>
+        <div id="index-counter"></div>
         <section>
             <div>
                 <h1 class="welcome-headline">Welcome to Yanru's world</h1>
@@ -29,5 +29,12 @@
         </section>
     </div>
 </body>
+
+<script>
+    window.addEventListener('load', (event) => {
+        displayCounter();
+
+    });
+</script>
 
 </html>
