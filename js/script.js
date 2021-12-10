@@ -21,11 +21,17 @@ function toggleNavItem() {
 function submitContact() {
     //validate input
     let inputArrs = document.getElementsByClassName("contact-item");
-    for (let input of inputArrs) {
-        if (input.value == '') {
+    for (let i = 0; i < inputArrs.length; i++) {
+        if (inputArrs[i].value == '') {
             document.getElementById("contact-alert").innerHTML = "<p>Please fill in all fields. Thank you!</p>";
             return;
         }
+
+        if (i == 1 && !inputArrs[i].value.includes("@")) {
+            document.getElementById("contact-alert").innerHTML = "<p>Please enter a proper email address.</p>";
+            return;
+        }
+
     }
     //If all fields filled
     document.getElementById("contact-alert").innerHTML = "";
