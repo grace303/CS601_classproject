@@ -532,7 +532,7 @@ audio {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1280px) {
   /* work sidebar */
   .work-main {
     margin-left: auto;
