@@ -740,7 +740,7 @@ audio {
   cursor: pointer;
   position: relative;
   top: 5%;
-  left: 5%;
+  left: 30px;
   padding: 10px;
   transform: translate(0%, -50%);
   float: right;
