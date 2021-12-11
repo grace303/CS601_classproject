@@ -424,7 +424,7 @@ audio {
   background: none;
   border: none;
   border-bottom: 1px solid #3e838c;
-  color: #3e838c;
+  color: var(--secondary-color);
   outline: none;
   transition: border-color 0.2s;
 }
