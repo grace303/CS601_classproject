@@ -33,3 +33,19 @@ This week I mainly work on adding a css stylesheet to style the whole website.
 
 ## How to run
 Open the CS601_HW1_Zhu folder, click on "index.html" to open it on in your browser(better to use Chrome for now). Click on the "LET'S GO!" button to go to the website. Then you can click on the nav bar items to browse around the website.
+
+## *FINAL PROJECT*
+## Intro
+This is the final project of my personal website.
+
+## What I changed after the presentation
+1. I added an API call using fetch and await in the "about" page - if you refresh the page, you will get different images & figcaptions of "Chengdu". I am using API of Flickr to dynamically get those page. If the fetch fails, it will change back to the local default images.
+2. Changed the format of data in vue.js to "return".
+
+## How I go beyond
+1. Try to use ES6, for example arrow functions and literal templates.
+2. Use an external API.
+3. Use Flexbox to make the whole site responsive.
+
+## How to run
+Open the folder, click on "index.html" to open it on in your browser. Click on the "LET'S GO!" button to go to the website. Then you can click on the nav bar items to browse around the website. Or you can go to the hosted website https://grace303.github.io/CS601_classproject/
