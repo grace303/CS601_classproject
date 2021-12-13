@@ -58,13 +58,9 @@
                 </article>
             </header>
             <section class="about-me-imgs">
-                <figure>
-                    <img src="assets/chengdu_panda.jpeg" alt="Food Looks Like Panda">
-                    <figcaption>Chengdu Snacks that Made Like Pandas.</figcaption>
+                <figure id="chengdu1_figure">
                 </figure>
-                <figure>
-                    <img src="assets/chengdu_food.jpeg" alt="Chengdu Food">
-                    <figcaption>Spicy Food at Chengdu, China.</figcaption>
+                <figure id="chengdu2_figure">
                 </figure>
             </section>
             <!-- A video created by myself showing the personality of me -->
@@ -85,6 +81,71 @@
                         class="fab fa-instagram-square"></i></a></li>
         </ul>
     </footer>
+
+    <script>
+        //Work page API call
+        //Function used to get two random numbers, which are used to access Chengdu images randomly
+        function getRandomNumbers() {
+            let number1 = Math.floor(Math.random() * 100);
+            let number2 = Math.floor(Math.random() * 100);
+
+            while (number1 == number2) {
+                number2 = Math.floor(Math.random() * 100);
+            }
+
+            return [number1, number2]
+        }
+        //Do everything when the doc is ready
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            let chengdu1_figure = document.getElementById('chengdu1_figure');
+            let chengdu2_figure = document.getElementById('chengdu2_figure');
+            //Add img tag and figcaption after a figure
+            chengdu1_figure.appendChild(document.createElement("img"));
+            chengdu2_figure.appendChild(document.createElement("img"));
+
+            let image1 = chengdu1_figure.querySelector("img");
+            let image2 = chengdu2_figure.querySelector("img");
+
+            image1.after(document.createElement("figcaption"));
+            image2.after(document.createElement("figcaption"));
+
+            let figcaption1 = chengdu1_figure.querySelector("figcaption");
+            let figcaption2 = chengdu2_figure.querySelector("figcaption");
+
+            fetch('https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=d963de7f4e48870b32c6115ed36b46bf&tags=chengdu&text=chengdu&license=9%2C10&sort=relevance&extras=url_o&format=json&nojsoncallback=1')
+                .then(response => {
+                    if (response.status == 200) {
+                        response.json().then(data => {
+                            let numsArr = getRandomNumbers();
+                            let num1 = numsArr[0];
+                            let num2 = numsArr[1];
+
+                            //Update img src, alt, and figcation
+                            image1.src = data.photos.photo[num1].url_o;
+                            image2.src = data.photos.photo[num2].url_o;
+                            image1.alt = data.photos.photo[num1].title;
+                            image2.alt = data.photos.photo[num2].title;
+                            figcaption1.innerText = data.photos.photo[num1].title;
+                            figcaption2.innerText = data.photos.photo[num2].title;
+
+                        });
+                    }
+                    else {
+
+                        //Use default img src, alt, and figcation when the fetch fails
+                        image1.src = "assets/chengdu_panda.jpeg";
+                        image2.src = "assets/chengdu_food.jpeg";
+                        image1.alt = "Food Looks Like Panda";
+                        image2.alt = "Chengdu Food";
+                        figcaption1.innerText = "Chengdu Snacks that Made Like Pandas.";
+                        figcaption2.innerText = "Spicy Food at Chengdu, China.";
+
+
+                    }
+                });
+        });
+    </script>
 </body>
 
 </html>
