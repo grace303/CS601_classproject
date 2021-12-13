@@ -20,21 +20,21 @@
 <body>
     <section class="welcome-wrapper">
         <section id="index-counter"></section>
-        <main>
+        <div>
             <article>
                 <h1 class="welcome-headline">Welcome to Yanru's world</h1>
                 <p class="welcome-text">You will explore the world of Yanru in this journey.</p>
                 <a href="home.html" class="welcome-btn download-btn">LET'S GO!</a>
             </article>
-        </main>
+        </div>
     </section>
+
+    <script>
+        window.addEventListener('load', (event) => {
+            displayCounter();
+
+        });
+    </script>
 </body>
-
-<script>
-    window.addEventListener('load', (event) => {
-        displayCounter();
-
-    });
-</script>
 
 </html>
